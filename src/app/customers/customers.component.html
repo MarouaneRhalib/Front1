@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet" href="customers.component.css" />
+<head>
+</head>
+<body>
+<section>
+<table id="customers">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+  <tr *ngFor="let c of customers._embedded.customers">
+    <td>{{c.name}}</td>
+    <td>{{c.email}} </td>
+  </tr>
+</table>
+</section>
+</body>
+</html>

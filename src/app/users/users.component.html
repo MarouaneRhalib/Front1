@@ -1,0 +1,7 @@
+<section>
+<ul class="list-group">
+  <li *ngFor="let u of users" class="list-group-item">
+    <a (click)="onGetRoles(u)">{{u.username}}</a>
+  </li>
+</ul>
+</section>

@@ -1,0 +1,5 @@
+section{
+  background: url(src/app/login/img/log.svg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 60px);
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="bills.component.css" />
+<head>
+</head>
+<body>
+<section>
+<table id="customers">
+  <tr>
+    <th>Date</th>
+    <th>Customer ID</th>
+  </tr>
+  <tr *ngFor="let c of bills._embedded.bills">
+    <td>{{c.billingDate}}</td>
+    <td>{{c.customerID}} </td>
+  </tr>
+</table>
+</section>
+</body>
+</html>
